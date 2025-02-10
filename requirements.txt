@@ -1,0 +1,6 @@
+bs4
+flask
+flask-cors
+git+https://github.com/nmcassa/letterboxdpy.git
+lxml
+requests

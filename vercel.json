@@ -1,9 +1,18 @@
 {
   "version": 2,
   "builds": [
-    { "src": "server.py", "use": "@vercel/python" }
+    {
+      "src": "server.py",
+      "use": "@vercel/python"
+    }
   ],
+  "env": {
+    "TMDB_API_KEY": "@tmdb_api_key"
+  },
   "routes": [
-    { "src": "/(.*)", "dest": "/server.py" }
+    {
+      "src": "/(.*)",
+      "dest": "/server.py"
+    }
   ]
 }
